@@ -87,7 +87,7 @@ Music.prototype = {
     _getSong: function () {                                    //向API发请求，获取歌曲
         var that = this;
         $.ajax({
-            url: "//api.jirengu.com/fm/getSong.php",
+            url: "http://api.jirengu.com/fm/getSong.php",
             method: "get",
             dataType: "json",
             data: {channel: that.songInfo.channel}
