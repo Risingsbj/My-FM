@@ -1,0 +1,257 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-align: none;
+    color: #8f8e94;
+}
+
+.layout {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    font: 12px/1.5  BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, PingFang SC, Source Han Sans CN, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgba(250, 250, 250, 0.933333)
+}
+
+.fm-box {
+    position: relative;
+    width: 340px;
+    border-radius: 5px;
+    margin: 30px auto;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2)
+}
+
+.fm-box .iconfont{
+    opacity: .8;
+    cursor: pointer;
+    transition: all .3s;
+}
+.fm-box .iconfont:hover{
+    opacity: 1;
+}
+
+.fm-box header {
+    position: relative;
+    height: 35px;
+    background: linear-gradient(#02ada2, #0c959b);
+    border-radius: 5px 5px 0 0;
+}
+.fm-box .icon-ball {
+    position: relative;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.fm-box .icon-ball:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+}
+
+.fm-box .icon-ball:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+}
+.fm-box .icon-ball,
+.fm-box .icon-ball:before,
+.fm-box .icon-ball:after {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.2) inset, 0 -2px 2px 2px rgb(11, 152, 156) inset, 0 1px 1px 1px rgba(255,255,255,0.2), 0 -1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 50%;
+}
+
+.fm-box .volume {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    margin-right: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(255,255,255,.4);
+}
+.fm-box .volume-bar {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+.fm-box .volume-bar span{
+    display: block;
+    width: 8px;
+    height: 2px;
+    margin-top: 3px;
+    background-color: #91bdb4;
+    cursor: pointer;
+}
+.fm-box .volume-bar span.active,
+.fm-box .volume-bar span.active ~ span {
+    background-color: #ced9d3
+}
+
+.fm-box nav {
+    height: 35px;
+    background: linear-gradient(#2c3c35, #313431);
+}
+
+.fm-box nav .icon-arrow-left {
+    float: left;
+    color: #e8edea;
+    margin-left: 20px;
+    margin-top: 6px;
+}
+.fm-box nav .icon-arrow-right {
+    float: right;
+    color: #e8edea;
+    margin-right: 20px;
+    margin-top: 6px;
+} 
+.fm-box nav .chan-list{
+    position: relative;
+    top: 7px;
+    height: 21px;
+    margin: 0px 42px;
+    line-height :21px;
+    overflow: hidden; 
+}
+.fm-box nav .chan-list:after{
+    content: " ";
+    display: block;
+    clear: both;   
+}
+.fm-box nav .chan-list .channels {
+    position: absolute;
+    text-align: center;
+}
+.fm-box nav .chan-list .channels >li{
+    float: left;
+}
+.fm-box nav .channels >li:hover {
+    color: #e8edea;
+    font-size: 17px;
+}
+.fm-box nav .channels li.active {
+    color: #e8edea;
+    font-size: 17px;
+}
+.fm-box nav li {
+    display: inline-block;
+    color: #7d807e;
+    font-weight: bold;
+    font-size: 14px;
+    width: 84px;
+    cursor: pointer;
+}
+
+.fm-box main{
+    padding: 15px 20px;
+    background-color: #e8edea;
+}
+
+.fm-box main img {
+    float: left;
+    width: 85px;
+    height: 85px;
+}
+
+.fm-box main .detail {
+    position: relative;
+    margin-left: 105px;
+}
+.fm-box .singer {
+    font-size: 13px;
+    color: #7f8281;
+    font-weight: bold;
+}
+.fm-box .title {
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+    margin-right: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+} 
+.fm-box .time {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-weight: bold;
+    color: #91bdb4;
+}
+.fm-box .progress-bar{
+    position: relative;
+    margin-top: 12px;
+    height: 3px;
+    background-color: #ced9d3;
+    cursor: pointer;
+}
+.fm-box .progress-bar .progress {
+    position: absolute;
+    height: 3px;
+    background-color: #91bdb4;
+    transition: all .3s;
+}
+.fm-box .buttons {
+    margin-top: 16px;
+    text-align: center;
+}
+.fm-box .buttons:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.fm-box .buttons .iconfont {
+    font-size: 21px;
+    color: #3f413f;
+}
+.fm-box .buttons .icon-heart{
+    float: left;
+}
+.fm-box .buttons .icon-heart.active{
+    color: #d9414e;
+}
+.fm-box .buttons .icon-next{
+    float: right;
+}
+.fm-box footer {
+    text-align: center;
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+.fm-box footer li {
+    display: none;
+    color: #91bdb4;
+    font-size: 14px;
+    font-weight: bold;
+}
+.fm-box footer li.active {
+    display: block;
+}
