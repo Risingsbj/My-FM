@@ -87,7 +87,7 @@ Music.prototype = {
     _getSong: function () {                                    //向API发请求，获取歌曲
         var that = this;
         $.ajax({
-            url: "http://api.jirengu.com/fm/getSong.php",
+            url: "https://api.jirengu.com/fm/getSong.php",
             method: "get",
             dataType: "json",
             data: {channel: that.songInfo.channel}
@@ -110,7 +110,7 @@ Music.prototype = {
     _getChannels: function () {                            //获取频道列表
         var that = this;
         $.ajax({
-            url: "http://api.jirengu.com/fm/getChannels.php",
+            url: "https://api.jirengu.com/fm/getChannels.php",
             method: "get",
             dataType: "json"
         }).done(function (event) {
@@ -176,7 +176,7 @@ Music.prototype = {
     _getLyric: function () {          //获取歌词
         var that = this;
         $.ajax({
-            url: "http://api.jirengu.com/fm/getLyric.php",
+            url: "https://api.jirengu.com/fm/getLyric.php",
             method: "get",
             dataType: "json",
             data: {sid: that.songInfo.sid}
